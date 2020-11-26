@@ -1,0 +1,20 @@
+{
+    "name": "qshsoft/images",
+    "description": "全摄汇images类",
+    "keywords": [
+        "qshsoft", "images", "php"
+    ],
+    "license": "MIT",
+    "authors": [{
+        "name": "onming",
+        "email": "170893265@qq.com"
+    }],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qshsoft\\images\\": "src/"
+        }
+    }
+}
