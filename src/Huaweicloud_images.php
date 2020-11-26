@@ -15,7 +15,7 @@ class Huaweicloud_images
         $this->app_secret = $app_secret;
     }
 
-    public function image_tagging_aksk($data = "", $url = "", $threshold = 5, $language = 'en', $limit = '10')
+    public function image_tagging_aksk($data = "", $url = "", $threshold = 5, $language = 'zh', $limit = '10')
     {
         $result = image_tagging_aksk($this->app_key, $this->app_secret, $data, $url, $threshold, $language, $limit);
         $result = json_decode($result, true);
