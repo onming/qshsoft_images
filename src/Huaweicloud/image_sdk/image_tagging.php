@@ -65,7 +65,8 @@ function image_tagging_aksk($_ak, $_sk, $data, $url, $threshold, $language, $lim
     $signer->AppKey = $_ak;             // 构建ak
     $signer->AppSecret = $_sk;          // 构建sk
 
-    $endPoint = get_endpoint(IMAGE);
+    // $endPoint = get_endpoint(IMAGE);
+    $endPoint = "image.cn-north-4.myhuaweicloud.com";
 
     // 构建请求对象
     $req = new Request();
@@ -103,9 +104,7 @@ function image_tagging_aksk($_ak, $_sk, $data, $url, $threshold, $language, $lim
         if (status_success($status)) {
             return $response;
         } else {
-
-            echo "Http status is: " . $status . "\n";
-            echo $response;
+            return $response;
         }
 
     }
