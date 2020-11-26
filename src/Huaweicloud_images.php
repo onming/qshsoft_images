@@ -2,8 +2,8 @@
 
 namespace Qshsoft\images;
 
-require "./image_sdk/image_tagging.php";
-require "./image_sdk/utils.php";
+require dirname(__FILE__)."/Huaweicloud/image_sdk/image_tagging.php";
+require dirname(__FILE__)."/Huaweicloud/image_sdk/utils.php";
 class Huaweicloud_images
 {
     private $app_key = '';
